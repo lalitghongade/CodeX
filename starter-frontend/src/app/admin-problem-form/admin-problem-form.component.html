@@ -1,0 +1,13 @@
+<!-- admin-problem-form.component.html -->
+<form (ngSubmit)="submitProblem()">
+    <label>Title:</label>
+    <input type="text" [(ngModel)]="problem.title" name="title" required>
+    
+    <label>Description:</label>
+    <textarea [(ngModel)]="problem.description" name="description" required></textarea>
+    
+    <!-- Add more form fields as needed -->
+    
+    <button type="submit">Submit Problem</button>
+  </form>
+  

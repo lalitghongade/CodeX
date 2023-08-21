@@ -1,0 +1,13 @@
+<div class="container mt-5">
+    <h2>Available Problems</h2>
+  
+    <div class="list-group mt-4">
+      <a *ngFor="let problem of problems" [routerLink]="['/problem', problem.id]" class="list-group-item list-group-item-action">
+        <h4 class="mb-1">{{ problem.title }}</h4>
+        <p class="mb-1">Difficulty: {{ problem.difficulty }}</p>
+        <p class="mb-1">{{ problem.description }}</p>
+        <button class="btn btn-primary btn-sm" (click)="submitSolution(problem.id)">Submit</button>
+      </a>
+    </div>
+  </div>
+  

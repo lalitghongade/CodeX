@@ -1,0 +1,31 @@
+<div class="container mt-5">
+    <h2>{{ problem.title }}</h2>
+    <p class="mb-4">Difficulty: {{ problem.difficulty }}</p>
+  
+    <div class="problem-statement">
+      <h4>Problem Statement</h4>
+      <p>{{ problem.fullStatement }}</p>
+    </div>
+  
+    <div class="input-output-examples mt-4">
+      <h4>Input/Output Examples</h4>
+      <div *ngFor="let example of problem.examples" class="mb-3">
+        <p><strong>Input:</strong> {{ example.input }}</p>
+        <p><strong>Output:</strong> {{ example.output }}</p>
+      </div>
+    </div>
+  
+    <div class="problem-constraints mt-4">
+      <h4>Problem Constraints</h4>
+      <p>{{ problem.constraints }}</p>
+    </div>
+  
+    <!-- Code Editor for User -->
+    <div class="code-editor mt-5">
+      <h4>Write and Test Your Code</h4>
+      <!-- Include a code editor component (e.g., ngx-monaco-editor) here -->
+    </div>
+  
+    <button class="btn btn-primary mt-4" (click)="submitCode()">Submit Solution</button>
+  </div>
+  
