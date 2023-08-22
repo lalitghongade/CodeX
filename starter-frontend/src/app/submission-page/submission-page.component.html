@@ -1,6 +1,5 @@
-<div class="container mt-5">
-    <h2>Submit Your Solution</h2>
-  
+<div class="container">
+    <!-- <h2>Submit Your Solution</h2> -->
     <div class="code-editor mt-4">
       <label for="languageSelect">Select Programming Language:</label>
       <select id="languageSelect" class="form-control" [(ngModel)]="selectedLanguage">
@@ -9,8 +8,8 @@
         <option value="python">Python</option>
         <!-- Add more language options -->
       </select>
-      <br>
-      <h4>Write Your Code:</h4>
+      <!-- <br> -->
+      <!-- <h4>Write Your Code:</h4> -->
       <div class="editor-container">
         <ngx-codemirror
         [(ngModel)]="code"
@@ -26,13 +25,13 @@
   
     <div class="mt-4">
       <button class="btn btn-primary" (click)="compileAndRun()">Compile/Run</button>
+      <button class="btn btn-success " (click)="submitSolution()">Submit Solution</button>
+
     </div>
   
     <div *ngIf="outputMessage" class="mt-4">
       <h4>Output:</h4>
       <pre>{{ outputMessage }}</pre>
     </div>
-  
-    <button class="btn btn-success mt-4" (click)="submitSolution()">Submit Solution</button>
   </div>
   

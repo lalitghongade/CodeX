@@ -15,6 +15,7 @@ import { ProblemDetailsComponent } from './problem-details/problem-details.compo
 import { SubmissionPageComponent } from './submission-page/submission-page.component';
 import { CodemirrorModule } from '@ctrl/ngx-codemirror';
 import { AdminProblemFormComponent } from './admin-problem-form/admin-problem-form.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { AdminProblemFormComponent } from './admin-problem-form/admin-problem-fo
     ProblemDetailsComponent,
     SubmissionPageComponent,
     AdminProblemFormComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

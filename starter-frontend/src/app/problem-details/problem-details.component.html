@@ -1,4 +1,6 @@
-<div class="container mt-5">
+<div class="container-submission">
+
+  <div class="problem-desc col" >
     <h2>{{ problem.title }}</h2>
     <p class="mb-4">Difficulty: {{ problem.difficulty }}</p>
   
@@ -19,13 +21,18 @@
       <h4>Problem Constraints</h4>
       <p>{{ problem.constraints }}</p>
     </div>
+  </div>
+
+
+
+   
   
     <!-- Code Editor for User -->
-    <div class="code-editor mt-5">
-      <h4>Write and Test Your Code</h4>
+    <div class="editor col">
+      <!-- <h4>Write and Test Your Code</h4> -->
       <!-- Include a code editor component (e.g., ngx-monaco-editor) here -->
+      <app-submission-page></app-submission-page>
     </div>
   
-    <button class="btn btn-primary mt-4" (click)="submitCode()">Submit Solution</button>
-  </div>
+    <!-- <button class="btn btn-primary mt-4" (click)="submitCode()">Submit Solution</button> --> </div>
   

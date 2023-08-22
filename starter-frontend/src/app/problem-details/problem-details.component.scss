@@ -1,0 +1,25 @@
+.container-submission{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // border: 2px black solid;
+    background-color: gray;
+
+}
+
+
+.problem-desc{ 
+    overflow: scroll;
+
+    padding: 5px;
+    margin-right: 10px;
+border: 1px gray;
+width: 30%;
+}
+
+.editor{
+    width: 70%;
+    border: 1px gray ;
+
+}

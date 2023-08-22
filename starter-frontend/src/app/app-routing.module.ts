@@ -7,6 +7,7 @@ import { authGuard } from './shared/auth.guard';
 import { ProblemListComponent } from './problem-list/problem-list.component';
 import { ProblemDetailsComponent } from './problem-details/problem-details.component';
 import { SubmissionPageComponent } from './submission-page/submission-page.component';
+import { AdminProblemFormComponent } from './admin-problem-form/admin-problem-form.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/log-in', pathMatch: 'full' },
@@ -14,9 +15,10 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent, 
   //canActivate: [authGuard] 
 },
-{ path: '', component: ProblemListComponent },
+{ path: 'problem-list', component: ProblemListComponent },
 { path: 'problem/:id', component: ProblemDetailsComponent },
 { path: 'submit', component: SubmissionPageComponent },
+{ path: 'set-problems', component: AdminProblemFormComponent },
 
 { path: 'log-in', component: LoginComponent },
 { path: 'register', component: RegisterComponent },
